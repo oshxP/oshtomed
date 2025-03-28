@@ -1,47 +1,128 @@
-<!-- Trigger rebuild -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Company</title>
+  <title>GND Solutions Clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script defer src="script.js"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- Header / Navigation -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">My Company</div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">GND Solutions</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <h1>Welcome to My Company</h1>
-    <p>Your trusted partner for amazing products</p>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Innovative IoT & Embedded Solutions</h1>
+      <p>Smart, Scalable & Sustainable Technologies</p>
+    </div>
   </section>
 
-  <!-- Products Placeholder -->
-  <section class="products">
-    <h2>Our Products</h2>
-    <div class="product-list">
-      <!-- Product cards will go here -->
-      <p>(We'll add a product slider here later!)</p>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>GND Solutions is a one-stop solution provider for Embedded Systems and IoT. We offer cutting-edge product design and development services for global clients.</p>
+    </div>
+  </section>
+
+  <!-- Product Slider -->
+  <section id="products" class="section">
+    <div class="container">
+      <h2>Our Products</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+  <div class="swiper-slide product-slide">
+    <div class="product-content">
+      <img src="images/product1.jpg" alt="Smart Tracker" />
+      <h3>Smart Tracker</h3>
+      <p>Real-time asset tracking with GPS, WiFi, and BLE connectivity.</p>
+    </div>
+  </div>
+  <div class="swiper-slide product-slide">
+    <div class="product-content">
+      <img src="images/product2.jpg" alt="Smart Meter" />
+      <h3>Smart Meter</h3>
+      <p>Energy metering and data transmission with LPWAN technology.</p>
+    </div>
+  </div>
+  <div class="swiper-slide product-slide">
+    <div class="product-content">
+      <img src="images/product3.jpg" alt="Environment Sensor" />
+      <h3>Environmental Sensor</h3>
+      <p>Compact wireless sensors for monitoring temperature, humidity, and air quality.</p>
+    </div>
+  </div>
+</div>
+  <div class="swiper-slide">
+    <img src="images/product2.jpg" alt="Product 2" />
+  </div>
+  <div class="swiper-slide">
+    <img src="images/product3.jpg" alt="Product 3" />
+  </div>
+</div>
+          <div class="swiper-slide">Product 2</div>
+          <div class="swiper-slide">Product 3</div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions Section -->
+  <section id="solutions" class="section">
+    <div class="container">
+      <h2>Our Solutions</h2>
+      <p>We provide end-to-end solutions in IoT, Smart Metering, Asset Tracking, and Smart Cities.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Our Services</h2>
+      <p>From concept to commercialization, our team delivers R&D, prototyping, manufacturing support, and compliance certifications.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="#" method="post">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 My Company. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 GND Solutions. All rights reserved.</p>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script defer src="script.js"></script>
 </body>
 </html>
